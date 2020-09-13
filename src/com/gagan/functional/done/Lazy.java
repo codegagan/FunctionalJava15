@@ -1,3 +1,5 @@
+package com.gagan.functional.done;
+
 import java.util.function.Supplier;
 
 public class Lazy {

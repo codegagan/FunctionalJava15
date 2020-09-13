@@ -1,3 +1,5 @@
+package com.gagan.functional.done;
+
 public class PureFunction {
 
     int factor = 5;

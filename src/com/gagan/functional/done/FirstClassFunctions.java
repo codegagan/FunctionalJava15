@@ -1,3 +1,5 @@
+package com.gagan.functional.done;
+
 import java.util.function.Function;
 
 public class FirstClassFunctions {

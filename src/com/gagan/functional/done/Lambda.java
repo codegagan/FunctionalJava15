@@ -1,8 +1,12 @@
+package com.gagan.functional.done;
+
 import java.io.Closeable;
 import java.io.IOException;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executors;
 
 public class Lambda {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         Closeable closeable = new Closeable() {
             @Override
             public void close() throws IOException {
@@ -14,5 +18,12 @@ public class Lambda {
 
         closeable.close();
         closeable1.close();
+
+        // Similar way other interfaces, which return something.
+
+        Callable<String> callable = () -> "Value from a thread";
+
+        System.out.println(Executors.newSingleThreadExecutor().submit(callable).get());
+
     }
 }
