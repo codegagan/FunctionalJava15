@@ -3,9 +3,9 @@ import java.util.Map;
 import java.util.concurrent.*;
 import java.util.function.*;
 
-public record Touple(Long appId, Map fields) {
+public record Experiments(Long appId, Map fields) {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        Touple x = new Touple(5L, Collections.singletonMap("name", "gagan"));
+        Experiments x = new Experiments(5L, Collections.singletonMap("name", "gagan"));
         System.out.println(x.appId());
         System.out.println(x.fields());
 
