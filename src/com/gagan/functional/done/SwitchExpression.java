@@ -15,10 +15,28 @@ public class SwitchExpression {
 
         System.out.println(switch (a){
             case 1,2,3 -> 3;
-            case 5 -> 5;
+            case 5 -> " hello";
             default -> 10;
         });
 
         System.out.println("b = " + b);
+
+        // todo Check in JEP
+
+//        var c = switch (a){
+//            case 1,2,3 -> 6;
+//            case 5 -> "Hello";
+//            default -> "world";
+//        };
+//
+//        System.out.println("c = " + c.getClass());
+//
+//        var d = 10;
+//        System.out.println("d = " + d);
+//        d = "Hello";
+//
+//        c = 10;
+//        System.out.println("c = " + c.getClass());
+
     }
 }
