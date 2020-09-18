@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 public class Lazy {
     public static void main(String[] args) {
         doSomethingWithValues(4, getTheValue());
-        doSomethingWithValues(4, Lazy::getTheValue);
+        doSomethingWithValues(4, () -> getTheValue());
     }
 
     private static int getTheValue() {
